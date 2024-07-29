@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finbuddy - Debit Card Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="finbuddy-logo.png" alt="Finbuddy Logo">
+            <span>FINBUDDY</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="sign-in">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="payment-form">
+            <h1>Pay with debit card</h1>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="card-info">Card information:</label>
+                <div class="card-info">
+                    <input type="text" id="card-number" name="card-number" placeholder="Card Number" required>
+                    <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+                    <input type="text" id="card-cvc" name="card-cvc" placeholder="CVC" required>
+                </div>
+
+                <label for="cardholder-name">Cardholder name:</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" required>
+
+                <button type="submit">Pay</button>
+            </form>
+        </section>
+        <section class="bill-details">
+            <div class="plan">
+                <h2>BILL</h2>
+                <p>$200 / Year</p>
+                <ul>
+                    <li>Automate bills</li>
+                    <li>Reminders and Notifications</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

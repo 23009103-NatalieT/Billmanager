@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finbuddy - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="finbuddy-logo.png" alt="Finbuddy Logo">
+            <span>FINBUDDY</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="sign-in">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="help-section">
+            <h1>We're here to help</h1>
+            <div class="faq">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleAnswer('faq1')">Is FINBUDDY Free App?</button>
+                    <div class="faq-answer" id="faq1">
+                        <p>FINBUDDY is a free app.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleAnswer('faq2')">Is FINBUDDY safe for use?</button>
+                    <div class="faq-answer" id="faq2">
+                        <p>Yes, FINBUDDY is safe for use.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button class="previous" onclick="location.href='previous-page.html'">Previous</button>
+                <button class="next" onclick="location.href='next-page.html'">Next</button>
+            </div>
+        </section>
+        <section class="contact-icon">
+            <img src="path/to/phone-icon.png" alt="Phone Icon">
+        </section>
+    </main>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
