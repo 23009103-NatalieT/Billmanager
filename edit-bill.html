@@ -15,10 +15,9 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="sign-in">Log In</a></li>
+                <li><a href="pricing.html">Plans</a></li>
+                <li><b><a href="bills.html">Manage bills</a></b></li>
+                <li><a href="financial overview.html">Your financial Overview</a></li>
             </ul>
         </nav>
     </header>
@@ -40,14 +39,14 @@
                 <select id="payment-method" name="payment-method" required>
                     <option value="credit-card" selected>Credit Card</option>
                     <option value="debit-card">Debit Card</option>
-                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="paynow">PayNow</option>
                 </select>
 
                 <label for="notes">Notes:</label>
                 <textarea id="notes" name="notes" rows="4">Remember to check the meter reading.</textarea>
 
                 <div class="navigation-buttons">
-                    <button type="submit" class="next">Save Changes</button>
+                    <button type="button" class="previous" onclick="window.location.href='bills.html'">Save Changes</button>
                     <button type="button" class="previous" onclick="window.location.href='bills.html'">Cancel</button>
                 </div>
             </form>

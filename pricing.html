@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finbuddy - Bill Pricing</title>
+    <title>FinBuddy - Bill Pricing</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="finbuddy-logo.png" alt="Finbuddy Logo">
+            <img src="finbuddy-logo.png" alt="FinBuddy Logo">
             <span>FINBUDDY</span>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="sign-in">Log In</a></li>
-            </ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pricing.html">Plans</a></li>
+                <li><a href="bills.html">Manage bills</a></li>
+                <li><a href="financial overview.html">Your financial Overview</a></li>
+
         </nav>
     </header>
     <main>
         <section class="pricing-hero">
             <div class="pricing-content">
-                <h1>Bill Pricing</h1>
-                <p>Get our one month free trial now to test it out yourself!</p>
+                <h1>Our Pricing Plans</h1>
+                <p>Choose the plan that's right for you. Start with a free trial and experience the difference!</p>
                 <div class="pricing-buttons">
-                    <button class="previous" onclick="location.href='service.html'">Previous</button>
-                    <button class="next" onclick="location.href='signup.html'">Next</button>
                 </div>
             </div>
             <div class="pricing-plans">
+                <!-- Basic Plan -->
                 <div class="plan">
-                    <h2>BILL</h2>
-                    <p>$155 / Year</p>
+                    <h2>Basic Plan</h2>
+                    <p><strong>$49.90 / Year</strong></p>
                     <ul>
-                        <li>Automate bills</li>
-                        <li>Reminders and Notifications</li>
+                        <li>Automate bill payments</li>
+                        <li>Bill reminders and notifications</li>
+                        <li>Email support</li>
                     </ul>
-                    <button class="select-plan">Select Plan</button>
+                    <button class="select-plan" onclick="location.href='payment-selection.html'">Select Plan</button>
                 </div>
+                <!-- Standard Plan -->
                 <div class="plan">
-                    <h2>BILL</h2>
-                    <p>$49.90 / Year</p>
+                    <h2>Standard Plan</h2>
+                    <p><strong>$99.90 / Year</strong></p>
                     <ul>
-                        <li>Automate bills</li>
-                        <li>Reminders and Notifications</li>
-                        <li>Track spending, identify saving opportunities</li>
+                        <li>Automate bill payments</li>
+                        <li>Bill reminders and notifications</li>
+                        <li>Track spending, identify savings</li>
+                        <li>Priority email support</li>
                     </ul>
-                    <button class="select-plan">Select Plan</button>
+                    <button class="select-plan" onclick="location.href='payment-selection.html'">Select Plan</button>
+                </div>
+                <!-- Premium Plan -->
+                <div class="plan">
+                    <h2>Premium Plan</h2>
+                    <p><strong>$155 / Year</strong></p>
+                    <ul>
+                        <li>All Standard Plan features</li>
+                        <li>Advanced spending analytics</li>
+                        <li>Customizable spending categories</li>
+                        <li>24/7 customer support</li>
+                    </ul>
+                    <button class="select-plan" onclick="location.href='payment-selection.html'">Select Plan</button>
                 </div>
             </div>
         </section>

@@ -1,9 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background: #f0f2f5;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background: #00274d; /* Set the background color to blue */
+    color: white; /* Ensure text is white for visibility */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -25,6 +28,7 @@ header .logo img {
 }
 
 header .logo span {
+    font-family: fantasy;
     font-size: 24px;
     color: white;
 }
@@ -53,16 +57,94 @@ nav ul li a.sign-in {
 }
 
 main {
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     padding: 50px;
     background: #00274d;
     color: white;
 }
 
+.financial-insights {
+    background-color: #1a1a2e; /* Darker background to ensure text visibility */
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white; /* White text for contrast */
+}
+
+.financial-insights h2 {
+    font-size: 28px;
+    color: #00ffcc; /* Accent color for headings */
+    margin-bottom: 20px;
+}
+
+.insights-graph {
+    margin-bottom: 30px;
+}
+
+.insights-graph img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.financial-insights p,
+.financial-insights ul {
+    font-size: 16px;
+    color: #d1d1e9; /* Light gray for readability */
+}
+
+.financial-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.financial-summary ul li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.personalized-tips ul,
+.financial-summary ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.personalized-tips ul li,
+.financial-summary ul li {
+    margin-bottom: 10px;
+}
+
+.actionable-recommendations {
+    margin-top: 30px;
+}
+
+.actionable-recommendations button {
+    background: #00ffcc;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #00274d;
+    transition: background-color 0.3s ease;
+}
+
+.actionable-recommendations button:hover {
+    background: #00ccaa;
+}
+
+/* Other sections for consistency across all pages */
 .hero, .pricing-hero, .payment-selection, .payment-form, .help-section {
     max-width: 50%;
+    text-align: center;
 }
 
 .hero h1, .pricing-hero h1, .payment-selection h1, .payment-form h1, .help-section h1 {
@@ -96,6 +178,12 @@ button.next, button.previous {
     padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
+    border-radius: 5px;
+    color: #00274d;
+}
+
+button.next:hover, button.previous:hover {
+    background: #00ccaa;
 }
 
 .image-section img, .success-container img, .qrcode, .contact-icon img {
@@ -167,6 +255,7 @@ button.next, button.previous {
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
+    color: #00274d;
 }
 
 .form-container form button:hover {
@@ -192,7 +281,7 @@ button.next, button.previous {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100%;
     background: #00274d;
     color: white;
 }
@@ -233,6 +322,7 @@ button.next, button.previous {
     text-align: center;
     font-size: 16px;
     max-width: 50%;
+    margin: 0 auto;
 }
 
 .help-section {
@@ -278,4 +368,81 @@ button.next, button.previous {
 .contact-icon img {
     width: 100px;
     margin-left: 20px;
+}
+
+/* OTP Container Styles */
+.otp-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color: #333;
+    margin: 50px auto;
+}
+
+.otp-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00274d;
+}
+
+.otp-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #4b4b4b;
+}
+
+.otp-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.otp-input input {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.otp-input input:focus {
+    border-color: #00274d;
+}
+
+.otp-container button {
+    background-color: #00ffcc;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.otp-container button:hover {
+    background-color: #00ccaa;
+}
+
+/* Additional Styling for Consistency */
+.financial-summary ul,
+.personalized-tips ul {
+    color: #d1d1e9;
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.financial-summary ul li,
+.personalized-tips ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
